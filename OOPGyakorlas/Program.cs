@@ -16,6 +16,9 @@
             Urhajo urhajo1 = new("Géza", 200, 5, 60);
             Urhajo urhajo2 = new("Juliska", 300, 10, 100);
 
+            KemKuldetes kuldetes1 = new("Sanyi", "Magyarország", 10, 60);
+            KemKuldetes kuldetes2 = new("Pista", "Németország", 20, 50);
+
 
             konyv1.Kedvezmeny(20);
             konyv1.Arnoveles(1000);
@@ -42,6 +45,13 @@
             urhajo2.Indulas();
 
             Console.WriteLine("\n" + urhajo1.ToString() + "\n" + urhajo2.ToString());
+
+            Console.WriteLine("-----------------------------------------------------------");
+
+            kuldetes1.KuldetesInditasa();
+            kuldetes2.VeszelySzintNovel(10);
+
+            Console.WriteLine("\n" + kuldetes1.ToString() + "\n" + kuldetes2.ToString());
         }
     }
 }
